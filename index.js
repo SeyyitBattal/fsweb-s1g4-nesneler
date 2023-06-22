@@ -56,8 +56,7 @@ const burger = {
   kategori: "Öğle Yemeği",
 };
 
-const kisi = ["öğretmen", "öğrenci", "diğer"];
-burger.indirim = kisi;
+burger.indirim = ["öğretmen", "öğrenci", "diğer"];
 
 ///////////////Değerlendirmeler (MVP)///////////////////
 const degerlendirmeler = [
@@ -133,15 +132,13 @@ console.log(degerlendirmeler);
 */
 
 function DegerlendirmeEkle(degerlendirmeler5, isim5, puan5, geribildirim5) {
-  const yeniDizi = [
-    "isim: ",
-    isim5,
-    "puan: ",
-    puan5,
-    "geribildirim: ",
-    geribildirim5,
-  ];
-  return yeniDizi;
+  const yeniDizi = {
+    isim: isim5,
+    puan: puan5,
+    geribildirim: geribildirim5,
+  };
+  degerlendirmeler5.push(yeniDizi);
+  return degerlendirmeler5;
 }
 
 console.log(
