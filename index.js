@@ -140,7 +140,6 @@ function DegerlendirmeEkle(degerlendirmeler5, isim5, puan5, geribildirim5) {
   degerlendirmeler5.push(yeniDizi);
   return degerlendirmeler5;
 }
-
 console.log(
   DegerlendirmeEkle(degerlendirmeler, "Hurşut", 2, "Boktan yemekler!")
 );
@@ -182,13 +181,11 @@ console.log(AnahtardanDegerlendirmeAl(degerlendirmeler, 0));
 function SonDegerlendirmeyiAl(dizim7) {
   const dizidizi = dizim7[7];
   console.log(
-    " '" +
-      dizidizi.isim +
+    dizidizi.isim +
       " isimli kişi " +
       dizidizi.puan +
       " puan verdi ve şunları yazdı: " +
-      dizidizi.geribildirim +
-      "'"
+      dizidizi.geribildirim
   );
   return;
 }
