@@ -182,10 +182,20 @@ console.log(AnahtardanDegerlendirmeAl(degerlendirmeler, 0));
 	Not: Eğer 4. görevi başarıyla yaptıysanız kişinin geribildirimi boş görünmemeli
 */
 
-function SonDegerlendirmeyiAl(/*Kodlar buraya*/) {
-  /*Kodlar buraya*/
+function SonDegerlendirmeyiAl(dizim7) {
+  const dizidizi = dizim7[7];
+  console.log(
+    " '" +
+      dizidizi.isim +
+      " isimli kişi " +
+      dizidizi.puan +
+      " puan verdi ve şunları yazdı: " +
+      dizidizi.geribildirim +
+      "'"
+  );
+  return;
 }
-
+console.log(SonDegerlendirmeyiAl(degerlendirmeler));
 /////////////// BONUS  GÖRVLER////////////////////
 
 /**  BONUS 1:  
